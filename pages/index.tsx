@@ -24,6 +24,7 @@ export async function getServerSideProps(context: NextPageContext) {
 
 export default function Home() {
   const { data: movies = [] } = useMovieList();
+  console.log(movies);
   return (
     <>
       <Navbar />
